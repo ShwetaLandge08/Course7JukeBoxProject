@@ -1,6 +1,7 @@
 package course7.jukebox.userlogin;
 
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -8,8 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class LoginTest {
     Login login;
+    @Before
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         login = new Login();
     }
     

@@ -120,12 +120,12 @@ public class ArtistAndAlbum implements IArtistAndAlbum {
     }*/
     // method to generate ArtistId
     private String generateArtistId() {
-        String artistId = "";
+        String artistId;
         Random random = new Random();
         int randomNumber = random.nextInt(9999);
         artistId = "A" + randomNumber;
         return artistId;
-    }d
+    }
 
     // method to get Max AlbumId
      int getMaxAlbumId() {

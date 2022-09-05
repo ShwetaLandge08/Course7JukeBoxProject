@@ -80,7 +80,7 @@ public class Song implements ISong {
         try {
             String sql = "insert into Song values('" + songId + "', '" + songName + "', '" + durationOfSong + "', '" + songURL + "', '" +
                     genre + "', " + albumId + ", '" + ArtistId + "')";
-            System.out.println(sql);
+            //System.out.println(sql);
             Statement statement = ConnectionClass.con.createStatement();
             count = statement.executeUpdate(sql);
             if (count == 0) {

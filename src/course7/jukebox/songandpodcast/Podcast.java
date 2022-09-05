@@ -69,7 +69,7 @@ public class Podcast implements IPodcast {
         try {
             String sql = "insert into Podcast values('" + podcastId + "', '" + podcastName + "', '" + celebrityName + "', '" + podcastPublishDate +
                     "', '" + podcastURL + "')";
-            System.out.println(sql);
+            //System.out.println(sql);
             Statement statement = ConnectionClass.con.createStatement();
             count = statement.executeUpdate(sql);
             if (count == 0) {

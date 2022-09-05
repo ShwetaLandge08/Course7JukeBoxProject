@@ -12,13 +12,6 @@ public class User {
     private String userEmail;
     private String userMobileNo;
 
-    // Constructor
-    public User(String userName, String userPassword, String userEmail, String userMobileNo) {
-        this.userName = userName;
-        this.userPassword = userPassword;
-        this.userEmail = userEmail;
-        this.userMobileNo = userMobileNo;
-    }
     public User(){}
 
     // getter and setter

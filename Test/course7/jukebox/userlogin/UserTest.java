@@ -18,7 +18,7 @@ public class UserTest {
     @Test
     public void testCheckForExistingUser() {
         Assert.assertEquals(1, user.checkForExistingUser("Shweta", "Shweta@123"));
-        Assert.assertEquals(3, user.checkForExistingUser("Divya", "Divya@123"));
+        Assert.assertEquals(2, user.checkForExistingUser("Shekhar", "Shekhar@123"));
         Assert.assertEquals(0, user.checkForExistingUser("Ramesh", ("ramesh@12")));
     }
 }

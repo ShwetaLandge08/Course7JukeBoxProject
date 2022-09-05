@@ -1,13 +1,7 @@
 package course7.jukebox.main;
 
 import course7.jukebox.connection.ConnectionClass;
-import course7.jukebox.playlist.PlayList;
-import course7.jukebox.songandpodcast.ArtistAndAlbum;
-import course7.jukebox.songandpodcast.Podcast;
-import course7.jukebox.songandpodcast.Song;
 import course7.jukebox.userlogin.Login;
-
-import java.sql.Time;
 import java.text.ParseException;
 import java.util.Scanner;
 
@@ -20,6 +14,13 @@ public class Implementation {
         System.out.println("2. Existing User.");
         int choice = sc.nextInt();
         login.gotoChoice(choice);
+        /*PlayList playList = new PlayList();
+        Podcast podcast = new Podcast();
+        Song song = new Song();
+        List<Podcast> shweta = playList.showListOfPodcastForGivenUser("Shweta", 1);
+        podcast.displayPodcastList(shweta);
+        List<Song> shweta1 = playList.showListOfSongForGivenUser("Shweta", 1);
+        song.displaySongList(shweta1);*/
 
     }
 }

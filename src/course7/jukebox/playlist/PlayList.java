@@ -40,6 +40,7 @@ public class PlayList implements IPlayList{
     @Override
     public int addToPlayListSongAndPodcast(String playlistName, int userId) {
         int count = 0;
+
         int i = addToPlayList(playlistName, userId);
         if(i == 0){
             int playListId = 0;

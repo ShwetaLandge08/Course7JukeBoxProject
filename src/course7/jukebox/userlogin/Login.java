@@ -17,6 +17,9 @@ public class Login {
             String user_Name = sc.nextLine();
             if(!validateUserName(user_Name)){
                 System.out.println("Invalid UserName!");
+                System.out.println("Please enter the Valid User Name.");
+                user_Name = sc.nextLine();
+                user.setUserName(user_Name);
             }
             else {
                 user.setUserName(user_Name);
@@ -26,6 +29,9 @@ public class Login {
             String password = sc.nextLine();
             if (!validatePassword(password)) {
                 System.out.println("Invalid Password!");
+                System.out.println("Please enter valid User Password.");
+                password = sc.nextLine();
+                user.setUserPassword(password);
             }
             else {
                 System.out.println("Conformed Password.");
@@ -33,12 +39,22 @@ public class Login {
                 if (password.equals(password2)) {
                     user.setUserPassword(password);
                 }
+                else{
+                    System.out.println("Your Passwords are not same. please conformed again.");
+                    password2 = sc.nextLine();
+                    if (password.equals(password2)) {
+                        user.setUserPassword(password);
+                    }
+                }
             }
 
             System.out.println("Enter your email Address");
             String email = sc.nextLine();
             if(!validateEmail(email)){
                 System.out.println("Invalid Email.");
+                System.out.println("Please enter valid user Address.");
+                email = sc.nextLine();
+                user.setUserEmail(email);
             }
             else {
                 user.setUserEmail(email);
@@ -48,6 +64,9 @@ public class Login {
             String mobileNo = sc.nextLine();
             if(!validateMobile(mobileNo)){
                 System.out.println("Invalid Mobile Number.");
+                System.out.println("Enter valid user Mobile.");
+                mobileNo = sc.nextLine();
+                user.setUserMobileNo(mobileNo);
             }
             else {
                 user.setUserMobileNo(mobileNo);
